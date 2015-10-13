@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek);
+
+body {
+  	margin: 0;
+  	font-family: "Roboto Mono", sans-serif;
+}
+
+main {
+	position: relative;
+	z-index: 0;
+	top: 80px;
+}
+
+header {
+	height: 80px;
+	max-width: 50%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    margin: 0 auto;
+	z-index: 1;
+}
+
+header nav{
+	float: right;
+	margin-right: 0px;
+	margin-top: 28px;
+}
+
+header nav div ul{
+	list-style-type: none;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+header nav div ul li{
+	display: block;
+	display: inline;
+}
+
+.navlink{
+	color: #333333;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+
+}
+
+.navlink:hover{
+	color: grey;
+}
+
+
+#headerlogo{
+	float: left;
+	margin-left: 0px;
+	margin-top: 28px;
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#headerlogo:hover{
+	color: grey;
+}
+
+#about{
+	height: 40px;
+	width: 50%;
+    position: relative;
+    top: 0;
+    margin: 0 auto 0 auto;
+    font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+}
+
+#work{
+	height: 300px;
+	width: 50%;
+	position: relative;
+	padding: 0px;
+    margin: 0 auto 0 auto;
+
+}
+
+
+#worka, #workb, #workc {
+	float: left;
+	width: 33.3%;
+}
+
+#aboutintro{
+    margin: 0;
+}
+
+.border1{
+	border-top: dotted 1px;
+	max-width: 50%;
+	position: relative;
+	padding: 0px;
+    margin: 0.5% auto 0.5% auto;
+}
+
+@media only screen and (max-width : 767px) and (orientation: portrait) {
+	#worka, #workb, #workc {
+  		width: 100%;
+  	}
+}
+
+
+.work1 {
+	width: 90%;
+	height: 0;
+	margin: 5%;
+	margin-bottom: 10%;
+	padding-bottom: 90%;
+	background-image: url("images/CNN_G.jpg");
+	background-size: 105%;
+	background-position: center;
+	transition: background-image .2s linear .2s, background-size .2s linear .2s;
+}
+
+.work1:hover{
+	background-image: url("images/CNN.jpg");
+	background-size: 110%;
+	background-position: center;
+
+}
