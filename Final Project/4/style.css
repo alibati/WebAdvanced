@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic&subset=latin,greek);
+
+body {
+  	margin: 0;
+  	font-family: "Roboto Mono", sans-serif;
+}
+
+main {
+	position: relative;
+	z-index: 0;
+	top: 50px;
+}
+
+header {
+	height: 70px;
+	max-width: 50%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    margin: 0 auto;
+	z-index: 1;
+}
+
+header nav{
+	float: right;
+	margin-right: 0px;
+	margin-top: 28px;
+}
+
+header nav div ul{
+	list-style-type: none;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+header nav div ul li{
+	display: block;
+	display: inline;
+}
+
+.navlink{
+	color: #333333;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+
+}
+
+.navlink:hover{
+	text-decoration: underline;
+}
+
+
+#headerlogo{
+	float: left;
+	margin-left: 0px;
+	margin-top: 28px;
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#headerlogo:hover{
+	text-decoration: underline;
+}
+
+main p{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#about{
+	height: 40px;
+	max-width: 50%;
+    position: relative;
+    top: 0;
+    margin: 0 auto 0 auto;
+    font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+}
+
+#work{
+	height: 300px;
+	max-width: 51.5%;
+	position: relative;
+	padding: 0px;
+    margin: auto;
+
+}
+
+#worka{
+	float: left;
+	width: 31%;
+	margin-right: 3.5%
+}
+
+#workb{
+	float: left;
+	width: 31%;
+	margin-right: 3.5%
+}
+
+#workc{
+	float: left;
+	width: 31%;
+}
+
+.readMore {
+	/*color: rgba (0,0,0,1);*/
+	color: black;
+	opacity: 1;
+	transition: opacity .1s;
+}
+.readMore.hide {
+	opacity: 0;
+	/*color: rgba (0,0,0,0);*/
+  /*display: none;*/
+}
+
+.read-more-show{
+	text-decoration: none;
+	/*color: black;*/
+}
+
+.read-more-show:hover{
+	text-decoration: underline;
+}
+
+.read-more-hide{
+	text-decoration: none;
+	/*color: black;*/
+}
+
+.read-more-hide:hover{
+	text-decoration: underline;
+}
+
+.border1{
+	border-top: dotted 1px;
+	position: relative;
+	padding: 0px;
+    margin: 3% auto 3% auto;
+}
+
+.work1 {
+	width: 100%;
+	height: 0;
+	margin-bottom: 11%;
+	padding-bottom: 100%;
+	background-image: url("images/CNN_G.jpg");
+	background-size: 102%;
+	background-position: center;
+	transition: background-image .008s linear .008s, background-size .008s linear .008s;
+}
+
+#hideTarget {
+	max-height: 0px;
+	position: relative;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+#hideTarget.specialShow {
+	max-height: 10000px;
+
+}
+
+.work1:hover{
+	background-image: url("images/CNN.jpg");
+	background-size: 102%;
+	background-position: center;
+
+}
+
+@media only screen and (max-width : 767px) and (orientation: portrait) {
+	#worka, #workb, #workc {
+  		width: 100%;
+  	}
+}
